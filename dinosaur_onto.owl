@@ -12,5 +12,41 @@
   <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </owl:Class>
 
+<owl:Class rdf:about="#Ornithischia">
+  <rdfs:subClassOf rdf:resource="#Dinosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Heterodontosauridae">
+  <rdfs:subClassOf rdf:resource="#Ornithischia"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Saphornithischia">
+  <rdfs:subClassOf rdf:resource="#Ornithischia"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Genasauria">
+  <rdfs:subClassOf rdf:resource="#Saphornithischia"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Thyreophora">
+  <rdfs:subClassOf rdf:resource="#Genasauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Thyreophoroidea">
+  <rdfs:subClassOf rdf:resource="#Thyreophora"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Scelidosauridae">
+  <rdfs:subClassOf rdf:resource="#Thyreophoroidea"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Eurypoda">
+  <rdfs:subClassOf rdf:resource="#Thyreophoroidea"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Saurischia">
+  <rdfs:subClassOf rdf:resource="#Dinosauria"/>
+</owl:Class>
+
 
 </rdf:RDF>
