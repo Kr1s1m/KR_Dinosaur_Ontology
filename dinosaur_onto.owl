@@ -120,6 +120,10 @@
   <rdfs:subClassOf rdf:resource="#Thescelosauridae"/>
 </owl:Class>
 
+<owl:Class rdf:about="#Thescelosaurinae">
+  <rdfs:subClassOf rdf:resource="#Thescelosauridae"/>
+</owl:Class>
+
 <owl:Class rdf:about="#Cerapoda">
   <rdfs:subClassOf rdf:resource="#Neornithischia"/>
 </owl:Class>
@@ -220,8 +224,92 @@
   <rdfs:subClassOf rdf:resource="#Lambeosaurinae"/>
 </owl:Class>
 
+<owl:Class rdf:about="#Marginocephalia">
+  <rdfs:subClassOf rdf:resource="#Cerapoda"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Pachycephalosauria">
+  <rdfs:subClassOf rdf:resource="#Marginocephalia"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Pachycephalosauridae">
+  <rdfs:subClassOf rdf:resource="#Pachycephalosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Pachycephalosaurinae">
+  <rdfs:subClassOf rdf:resource="#Pachycephalosauridae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Pachycephalosaurini">
+  <rdfs:subClassOf rdf:resource="#Pachycephalosaurinae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Ceratopsia">
+  <rdfs:subClassOf rdf:resource="#Marginocephalia"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Neoceratopsia">
+  <rdfs:subClassOf rdf:resource="#Ceratopsia"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Leptoceratopsidae">
+  <rdfs:subClassOf rdf:resource="#Neoceratopsia"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Coronosauria">
+  <rdfs:subClassOf rdf:resource="#Neoceratopsia"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Protoceratopsidae">
+  <rdfs:subClassOf rdf:resource="#Coronosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Ceratopsidae">
+  <rdfs:subClassOf rdf:resource="#Coronosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Chasmosaurinae">
+  <rdfs:subClassOf rdf:resource="#Ceratopsidae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Triceratopsini">
+  <rdfs:subClassOf rdf:resource="#Chasmosaurinae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Centrosaurinae">
+  <rdfs:subClassOf rdf:resource="#Ceratopsidae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Nasutoceratopsini">
+  <rdfs:subClassOf rdf:resource="#Centrosaurinae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Eucentrosaura">
+  <rdfs:subClassOf rdf:resource="#Centrosaurinae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Pachyrhinosaurini">
+  <rdfs:subClassOf rdf:resource="#Eucentrosaura"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Centrosaurini">
+  <rdfs:subClassOf rdf:resource="#Eucentrosaura"/>
+</owl:Class>
+
 <owl:Class rdf:about="#Saurischia">
   <rdfs:subClassOf rdf:resource="#Dinosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Herrasauria">
+  <rdfs:subClassOf rdf:resource="#Saurischia"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Herrasauridae">
+  <rdfs:subClassOf rdf:resource="#Herrasauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Eusaurischia">
+  <rdfs:subClassOf rdf:resource="#Saurischia"/>
 </owl:Class>
 
 
