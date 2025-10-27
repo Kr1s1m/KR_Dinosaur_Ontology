@@ -108,6 +108,118 @@
   <rdfs:subClassOf rdf:resource="#Ankylosauridae"/>
 </owl:Class>
 
+<owl:Class rdf:about="#Neornithischia">
+  <rdfs:subClassOf rdf:resource="#Genasauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Thescelosauridae">
+  <rdfs:subClassOf rdf:resource="#Neornithischia"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Orodrominae">
+  <rdfs:subClassOf rdf:resource="#Thescelosauridae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Cerapoda">
+  <rdfs:subClassOf rdf:resource="#Neornithischia"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Ornithopoda">
+  <rdfs:subClassOf rdf:resource="#Cerapoda"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Hypsilophodontidae">
+  <rdfs:subClassOf rdf:resource="#Ornithopoda"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Iguanodontia">
+  <rdfs:subClassOf rdf:resource="#Ornithopoda"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Rhabdodontomorphs">
+  <rdfs:subClassOf rdf:resource="#Iguanodontia"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Tenontosauridae">
+  <rdfs:subClassOf rdf:resource="#Rhabdodontomorphs"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Rhabdodontidae">
+  <rdfs:subClassOf rdf:resource="#Rhabdodontomorphs"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Euiguanodontia">
+  <rdfs:subClassOf rdf:resource="#Iguanodontia"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Elasmaria">
+  <rdfs:subClassOf rdf:resource="#Euiguanodontia"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Dryomorpha">
+  <rdfs:subClassOf rdf:resource="#Euiguanodontia"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Dryosauridae">
+  <rdfs:subClassOf rdf:resource="#Dryomorpha"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Ankylopollexia">
+  <rdfs:subClassOf rdf:resource="#Dryomorpha"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Camptosauridae">
+  <rdfs:subClassOf rdf:resource="#Ankylopollexia"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Styracosterna">
+  <rdfs:subClassOf rdf:resource="#Ankylopollexia"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Hadrosauriformes">
+  <rdfs:subClassOf rdf:resource="#Styracosterna"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Iguanodontidae">
+  <rdfs:subClassOf rdf:resource="#Hadrosauriformes"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Hadrosauridea">
+  <rdfs:subClassOf rdf:resource="#Hadrosauriformes"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Hadrosauromorpha">
+  <rdfs:subClassOf rdf:resource="#Hadrosauridea"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Hadrosauridae">
+  <rdfs:subClassOf rdf:resource="#Hadrosauromorpha"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Saurolophinae">
+  <rdfs:subClassOf rdf:resource="#Hadrosauridae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Saurolopini">
+  <rdfs:subClassOf rdf:resource="#Saurolophinae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Edmontosaurini">
+  <rdfs:subClassOf rdf:resource="#Saurolophinae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Lambeosaurinae">
+  <rdfs:subClassOf rdf:resource="#Hadrosauridae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Parasaurolophini">
+  <rdfs:subClassOf rdf:resource="#Lambeosaurinae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Lambeosaurini">
+  <rdfs:subClassOf rdf:resource="#Lambeosaurinae"/>
+</owl:Class>
+
 <owl:Class rdf:about="#Saurischia">
   <rdfs:subClassOf rdf:resource="#Dinosauria"/>
 </owl:Class>
