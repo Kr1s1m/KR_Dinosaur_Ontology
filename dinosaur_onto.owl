@@ -44,6 +44,70 @@
   <rdfs:subClassOf rdf:resource="#Thyreophoroidea"/>
 </owl:Class>
 
+<owl:Class rdf:about="#Stegosauria">
+  <rdfs:subClassOf rdf:resource="#Eurypoda"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Huyangosauridae">
+  <rdfs:subClassOf rdf:resource="#Stegosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Stegosauridae">
+  <rdfs:subClassOf rdf:resource="#Stegosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Stegosaurinae">
+  <rdfs:subClassOf rdf:resource="#Stegosauridae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Decentrurinae">
+  <rdfs:subClassOf rdf:resource="#Stegosauridae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Ankylosauria">
+  <rdfs:subClassOf rdf:resource="#Eurypoda"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Parankylosauria">
+  <rdfs:subClassOf rdf:resource="#Ankylosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Euankylosauria">
+  <rdfs:subClassOf rdf:resource="#Ankylosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Nodosauridae">
+  <rdfs:subClassOf rdf:resource="#Euankylosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Polacanthinae">
+  <rdfs:subClassOf rdf:resource="#Nodosauridae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Nodosaurinae">
+  <rdfs:subClassOf rdf:resource="#Nodosauridae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Panoplosaurini">
+  <rdfs:subClassOf rdf:resource="#Nodosaurinae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Struthiosaurini">
+  <rdfs:subClassOf rdf:resource="#Nodosaurinae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Ankylosauridae">
+  <rdfs:subClassOf rdf:resource="#Euankylosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Shamosaurinae">
+  <rdfs:subClassOf rdf:resource="#Ankylosauridae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Ankylosaurinae">
+  <rdfs:subClassOf rdf:resource="#Ankylosauridae"/>
+</owl:Class>
+
 <owl:Class rdf:about="#Saurischia">
   <rdfs:subClassOf rdf:resource="#Dinosauria"/>
 </owl:Class>
