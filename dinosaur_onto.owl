@@ -312,5 +312,169 @@
   <rdfs:subClassOf rdf:resource="#Saurischia"/>
 </owl:Class>
 
+<owl:Class rdf:about="#Sauropodomorpha">
+  <rdfs:subClassOf rdf:resource="#Eusaurischia"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Saturnaliidae">
+  <rdfs:subClassOf rdf:resource="#Sauropodomorpha"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Sauropodomorpha_Plateosauria">
+  <rdfs:subClassOf rdf:resource="#Sauropodomorpha"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Plateosauria">
+  <rdfs:subClassOf rdf:resource="#Sauropodomorpha_Plateosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Plateosauridae_Unaysauridae">
+  <rdfs:subClassOf rdf:resource="#Plateosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Plateosauridae">
+  <rdfs:subClassOf rdf:resource="#Plateosauridae_Unaysauridae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Unaysauridae">
+  <rdfs:subClassOf rdf:resource="#Plateosauridae_Unaysauridae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Massapoda">
+  <rdfs:subClassOf rdf:resource="#Plateosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Riojasauridae">
+  <rdfs:subClassOf rdf:resource="#Massapoda"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Massapoda_Massospondylidae">
+  <rdfs:subClassOf rdf:resource="#Massapoda"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Massospondylidae">
+  <rdfs:subClassOf rdf:resource="#Massapoda_Massospondylidae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Massapoda_Massospondylidae_Sauropodiformes">
+  <rdfs:subClassOf rdf:resource="#Massapoda_Massospondylidae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Sauropodiformes">
+  <rdfs:subClassOf rdf:resource="#Massapoda_Massospondylidae_Sauropodiformes"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Sauropoda">
+  <rdfs:subClassOf rdf:resource="#Sauropodiformes"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Eusauropoda">
+  <rdfs:subClassOf rdf:resource="#Sauropoda"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Mamenchisauridae">
+  <rdfs:subClassOf rdf:resource="#Eusauropoda"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Eusauropoda_Neosauropoda">
+  <rdfs:subClassOf rdf:resource="#Eusauropoda"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Neosauropoda">
+  <rdfs:subClassOf rdf:resource="#Eusauropoda_Neosauropoda"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Diplodocoidea">
+  <rdfs:subClassOf rdf:resource="#Neosauropoda"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Rebbachisauridae">
+  <rdfs:subClassOf rdf:resource="#Diplodocoidea"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Limaysaurinae">
+  <rdfs:subClassOf rdf:resource="#Rebbachisauridae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Nigersaurinae">
+  <rdfs:subClassOf rdf:resource="#Rebbachisauridae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Flagellicaudata">
+  <rdfs:subClassOf rdf:resource="#Diplodocoidea"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Dicraeosauridae">
+  <rdfs:subClassOf rdf:resource="#Flagellicaudata"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Diplodocidae">
+  <rdfs:subClassOf rdf:resource="#Flagellicaudata"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Apatosaurinae">
+  <rdfs:subClassOf rdf:resource="#Diplodocidae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Diplodocinae">
+  <rdfs:subClassOf rdf:resource="#Diplodocidae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Macronaria">
+  <rdfs:subClassOf rdf:resource="#Neosauropoda"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Camarasauridae">
+  <rdfs:subClassOf rdf:resource="#Macronaria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Titanosauriformes">
+  <rdfs:subClassOf rdf:resource="#Macronaria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Brachiosauridae">
+  <rdfs:subClassOf rdf:resource="#Titanosauriformes"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Somphospondyli">
+  <rdfs:subClassOf rdf:resource="#Titanosauriformes"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Titanosauria">
+  <rdfs:subClassOf rdf:resource="#Somphospondyli"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Eutitanosauria">
+  <rdfs:subClassOf rdf:resource="#Titanosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Rinconsauria_Lognkosauria">
+  <rdfs:subClassOf rdf:resource="#Eutitanosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Rinconsauria">
+  <rdfs:subClassOf rdf:resource="#Rinconsauria_Lognkosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Lognkosauria">
+  <rdfs:subClassOf rdf:resource="#Rinconsauria_Lognkosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Eutitanosauria_Lithostrotia">
+  <rdfs:subClassOf rdf:resource="#Eutitanosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Lithostrotia">
+  <rdfs:subClassOf rdf:resource="#Eutitanosauria_Lithostrotia"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Saltasauridae">
+  <rdfs:subClassOf rdf:resource="#Lithostrotia"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Saltasaurinae">
+  <rdfs:subClassOf rdf:resource="#Saltasauridae"/>
+</owl:Class>
+
 
 </rdf:RDF>
