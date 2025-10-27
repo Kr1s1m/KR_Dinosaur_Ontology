@@ -476,5 +476,145 @@
   <rdfs:subClassOf rdf:resource="#Saltasauridae"/>
 </owl:Class>
 
+<owl:Class rdf:about="#Theropoda">
+  <rdfs:subClassOf rdf:resource="#Eusaurischia"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Coelophysidae">
+  <rdfs:subClassOf rdf:resource="#Theropoda"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Neotheropoda">
+  <rdfs:subClassOf rdf:resource="#Theropoda"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Dilophosauridae">
+  <rdfs:subClassOf rdf:resource="#Neotheropoda"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Averostra">
+  <rdfs:subClassOf rdf:resource="#Neotheropoda"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Tetanurae">
+  <rdfs:subClassOf rdf:resource="#Averostra"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Ceratosauria">
+  <rdfs:subClassOf rdf:resource="#Averostra"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Noasauridae">
+  <rdfs:subClassOf rdf:resource="#Ceratosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Noasaurinae">
+  <rdfs:subClassOf rdf:resource="#Noasauridae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Elaphrosaurinae">
+  <rdfs:subClassOf rdf:resource="#Noasauridae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Neoceratosauria">
+  <rdfs:subClassOf rdf:resource="#Ceratosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Etrigansauria">
+  <rdfs:subClassOf rdf:resource="#Neoceratosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Ceratosauridae">
+  <rdfs:subClassOf rdf:resource="#Etrigansauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Abelisauridae">
+  <rdfs:subClassOf rdf:resource="#Etrigansauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Carnotaurinae">
+  <rdfs:subClassOf rdf:resource="#Abelisauridae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Majungasaurinae">
+  <rdfs:subClassOf rdf:resource="#Carnotaurinae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Brachyrostra">
+  <rdfs:subClassOf rdf:resource="#Carnotaurinae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Furileusauria">
+  <rdfs:subClassOf rdf:resource="#Brachyrostra"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Carnosauria">
+  <rdfs:subClassOf rdf:resource="#Tetanurae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Spinosauridae">
+  <rdfs:subClassOf rdf:resource="#Carnosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Baryonychinae">
+  <rdfs:subClassOf rdf:resource="#Spinosauridae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Ceratosuchopsini">
+  <rdfs:subClassOf rdf:resource="#Baryonychinae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Spinosaurinae">
+  <rdfs:subClassOf rdf:resource="#Spinosauridae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Spinosaurini">
+  <rdfs:subClassOf rdf:resource="#Spinosaurinae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Neocarnosauria">
+  <rdfs:subClassOf rdf:resource="#Carnosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Megalosauridae">
+  <rdfs:subClassOf rdf:resource="#Neocarnosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Afrovenatorinae">
+  <rdfs:subClassOf rdf:resource="#Megalosauridae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Megalosaurinae">
+  <rdfs:subClassOf rdf:resource="#Megalosauridae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Allosauroidea">
+  <rdfs:subClassOf rdf:resource="#Neocarnosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Allosauridae">
+  <rdfs:subClassOf rdf:resource="#Allosauroidea"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Charcharodontosauridae">
+  <rdfs:subClassOf rdf:resource="#Allosauroidea"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Metriacanthosauridae">
+  <rdfs:subClassOf rdf:resource="#Charcharodontosauridae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Metriacanthosaurinae">
+  <rdfs:subClassOf rdf:resource="#Metriacanthosauridae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Charcharodontosaurinae">
+  <rdfs:subClassOf rdf:resource="#Charcharodontosauridae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Gigantosaurini">
+  <rdfs:subClassOf rdf:resource="#Charcharodontosaurinae"/>
+</owl:Class>
+
 
 </rdf:RDF>
