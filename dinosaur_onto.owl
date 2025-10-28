@@ -616,5 +616,341 @@
   <rdfs:subClassOf rdf:resource="#Charcharodontosaurinae"/>
 </owl:Class>
 
+<owl:Class rdf:about="#Coelurosauria">
+  <rdfs:subClassOf rdf:resource="#Tetanurae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Tyrannoraptora">
+  <rdfs:subClassOf rdf:resource="#Coelurosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Tyrannosauroidea">
+  <rdfs:subClassOf rdf:resource="#Tyrannoraptora"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Protoceratosauridae">
+  <rdfs:subClassOf rdf:resource="#Tyrannosauroidea"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Pantyrannosauria">
+  <rdfs:subClassOf rdf:resource="#Tyrannosauroidea"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Megaraptora">
+  <rdfs:subClassOf rdf:resource="#Pantyrannosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Megaraptoridae">
+  <rdfs:subClassOf rdf:resource="#Megaraptora"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Eutyrannosauria">
+  <rdfs:subClassOf rdf:resource="#Pantyrannosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Tyrannosauridae">
+  <rdfs:subClassOf rdf:resource="#Eutyrannosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Albertosaurinae">
+  <rdfs:subClassOf rdf:resource="#Tyrannosauridae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Tyrannosaurinae">
+  <rdfs:subClassOf rdf:resource="#Tyrannosauridae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Alioramini">
+  <rdfs:subClassOf rdf:resource="#Tyrannosaurinae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Daspletosaurini_Tyrannosaurini">
+  <rdfs:subClassOf rdf:resource="#Tyrannosaurinae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Daspletosaurini">
+  <rdfs:subClassOf rdf:resource="#Daspletosaurini_Tyrannosaurini"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Tyrannosaurini">
+  <rdfs:subClassOf rdf:resource="#Daspletosaurini_Tyrannosaurini"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Maniraptoromorpha">
+  <rdfs:subClassOf rdf:resource="#Tyrannoraptora"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Coeluridae">
+  <rdfs:subClassOf rdf:resource="#Maniraptoromorpha"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Neocoelurosauria">
+  <rdfs:subClassOf rdf:resource="#Maniraptoromorpha"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Compsognathidae">
+  <rdfs:subClassOf rdf:resource="#Neocoelurosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Maniraptoriformes">
+  <rdfs:subClassOf rdf:resource="#Neocoelurosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Ornitomimosauria">
+  <rdfs:subClassOf rdf:resource="#Maniraptoriformes"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Deinocheiridae">
+  <rdfs:subClassOf rdf:resource="#Ornitomimosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Ornithomimidae">
+  <rdfs:subClassOf rdf:resource="#Ornitomimosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Maniraptora">
+  <rdfs:subClassOf rdf:resource="#Maniraptoriformes"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Alvarezsauroidea">
+  <rdfs:subClassOf rdf:resource="#Maniraptora"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Alvarezsauridae">
+  <rdfs:subClassOf rdf:resource="#Alvarezsauroidea"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Patagonykinae_Alvarezsaurinae">
+  <rdfs:subClassOf rdf:resource="#Alvarezsauridae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Patagonykinae">
+  <rdfs:subClassOf rdf:resource="#Patagonykinae_Alvarezsaurinae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Alvarezsaurinae">
+  <rdfs:subClassOf rdf:resource="#Patagonykinae_Alvarezsaurinae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Parvicursorinae">
+  <rdfs:subClassOf rdf:resource="#Alvarezsauridae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Mononykini">
+  <rdfs:subClassOf rdf:resource="#Parvicursorinae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Maniraptora_Pennaraptora">
+  <rdfs:subClassOf rdf:resource="#Maniraptora"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Therizinosauridae">
+  <rdfs:subClassOf rdf:resource="#Maniraptora_Pennaraptora"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Pennaraptora">
+  <rdfs:subClassOf rdf:resource="#Maniraptora_Pennaraptora"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Oviraptorosauria">
+  <rdfs:subClassOf rdf:resource="#Pennaraptora"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Caudipteridae">
+  <rdfs:subClassOf rdf:resource="#Oviraptorosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Oviraptorosauria_Caenagnathoidea">
+  <rdfs:subClassOf rdf:resource="#Oviraptorosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Caenagnathoidea">
+  <rdfs:subClassOf rdf:resource="#Oviraptorosauria_Caenagnathoidea"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Caenagnathidae">
+  <rdfs:subClassOf rdf:resource="#Caenagnathoidea"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Oviraptoridae">
+  <rdfs:subClassOf rdf:resource="#Caenagnathoidea"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Paraves">
+  <rdfs:subClassOf rdf:resource="#Pennaraptora"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Dromaeosauridae">
+  <rdfs:subClassOf rdf:resource="#Paraves"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Halszlaraptorinae">
+  <rdfs:subClassOf rdf:resource="#Dromaeosauridae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Dromaeosauridae_Unenlagiinae">
+  <rdfs:subClassOf rdf:resource="#Dromaeosauridae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Unenlagiinae">
+  <rdfs:subClassOf rdf:resource="#Dromaeosauridae_Unenlagiinae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Microraptoria_Eudromaeosauria">
+  <rdfs:subClassOf rdf:resource="#Dromaeosauridae_Unenlagiinae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Microraptoria">
+  <rdfs:subClassOf rdf:resource="#Microraptoria_Eudromaeosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Eudromaeosauria">
+  <rdfs:subClassOf rdf:resource="#Microraptoria_Eudromaeosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Dromaeosaurinae">
+  <rdfs:subClassOf rdf:resource="#Eudromaeosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Velociraptorinae">
+  <rdfs:subClassOf rdf:resource="#Eudromaeosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Averaptora">
+  <rdfs:subClassOf rdf:resource="#Paraves"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Troodontidae">
+  <rdfs:subClassOf rdf:resource="#Averaptora"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Troodontinae">
+  <rdfs:subClassOf rdf:resource="#Troodontidae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Avialae">
+  <rdfs:subClassOf rdf:resource="#Averaptora"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Archaeopterygidae">
+  <rdfs:subClassOf rdf:resource="#Avialae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Scansoriopterygidae">
+  <rdfs:subClassOf rdf:resource="#Archaeopterygidae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Avialae_Pygostylia">
+  <rdfs:subClassOf rdf:resource="#Avialae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Jeholornithiformes">
+  <rdfs:subClassOf rdf:resource="#Avialae_Pygostylia"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Jeholornithidae">
+  <rdfs:subClassOf rdf:resource="#Jeholornithiformes"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Pygostylia">
+  <rdfs:subClassOf rdf:resource="#Avialae_Pygostylia"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Jinguofortisidae">
+  <rdfs:subClassOf rdf:resource="#Pygostylia"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Pygostylia_Ornithothoraces">
+  <rdfs:subClassOf rdf:resource="#Pygostylia"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Confuciusornithidae">
+  <rdfs:subClassOf rdf:resource="#Pygostylia_Ornithothoraces"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Ornithothoraces">
+  <rdfs:subClassOf rdf:resource="#Pygostylia_Ornithothoraces"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Enantiornithes">
+  <rdfs:subClassOf rdf:resource="#Ornithothoraces"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Longipterygidae">
+  <rdfs:subClassOf rdf:resource="#Enantiornithes"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Euenantiornithes">
+  <rdfs:subClassOf rdf:resource="#Enantiornithes"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Avisauridae">
+  <rdfs:subClassOf rdf:resource="#Euenantiornithes"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Pengornithidae_Bohaiornithidae">
+  <rdfs:subClassOf rdf:resource="#Euenantiornithes"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Pengornithidae">
+  <rdfs:subClassOf rdf:resource="#Pengornithidae_Bohaiornithidae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Bohaiornithidae">
+  <rdfs:subClassOf rdf:resource="#Pengornithidae_Bohaiornithidae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Euornithes">
+  <rdfs:subClassOf rdf:resource="#Ornithothoraces"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Ornithurae">
+  <rdfs:subClassOf rdf:resource="#Euornithes"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Hesperornithes">
+  <rdfs:subClassOf rdf:resource="#Ornithurae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Baptornithidae">
+  <rdfs:subClassOf rdf:resource="#Hesperornithes"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Brodavidae_Hesperornithidae">
+  <rdfs:subClassOf rdf:resource="#Hesperornithes"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Brodavidae">
+  <rdfs:subClassOf rdf:resource="#Brodavidae_Hesperornithidae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Hesperornithidae">
+  <rdfs:subClassOf rdf:resource="#Brodavidae_Hesperornithidae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Ornithurae_Ichthyornithes">
+  <rdfs:subClassOf rdf:resource="#Ornithurae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Ichthyornithes">
+  <rdfs:subClassOf rdf:resource="#Ornithurae_Ichthyornithes"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Ornithurae_Ichthyornithes_Vegaviidae">
+  <rdfs:subClassOf rdf:resource="#Ornithurae_Ichthyornithes"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Vegaviidae">
+  <rdfs:subClassOf rdf:resource="#Ornithurae_Ichthyornithes_Vegaviidae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Ornithurae_Ichthyornithes_Vegaviidae_Aves">
+  <rdfs:subClassOf rdf:resource="#Ornithurae_Ichthyornithes_Vegaviidae"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Aves">
+  <rdfs:subClassOf rdf:resource="#Ornithurae_Ichthyornithes_Vegaviidae_Aves"/>
+</owl:Class>
+
 
 </rdf:RDF>
