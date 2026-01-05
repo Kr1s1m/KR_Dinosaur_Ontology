@@ -1000,20 +1000,33 @@
   <rdfs:subClassOf rdf:resource="#Era"/>
 </owl:Class>
 
-<owl:NamedIndividual rdf:about="#LateCretacious">
-  <rdf:type rdf:resource="#Period"/>
+<owl:Class rdf:about="#Triassic">
+  <rdfs:subClassOf rdf:resource="#Period"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Jurassic">
+  <rdfs:subClassOf rdf:resource="#Period"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Cretaceous">
+  <rdfs:subClassOf rdf:resource="#Period"/>
+</owl:Class>
+
+<owl:NamedIndividual rdf:about="#LateCretaceous">
+  <rdf:type rdf:resource="#Cretaceous"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Tyrannosaurus">
   <rdf:type rdf:resource="#Tyrannosaurinae"/>
+  <HasFossilsFoundDuring rdf:resource="#LateCretaceous"/>
   <from_million_years_ago rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">69</from_million_years_ago>
   <until_million_years_ago rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">66</until_million_years_ago>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Triceraptops">
+<owl:NamedIndividual rdf:about="#Triceratops">
   <rdf:type rdf:resource="#Triceratopsini"/>
   <HasNaturalPredator rdf:resource="#Tyrannosaurus"/>
-  <HasFossilsFoundDuring rdf:resource="#LateCretacious"/>
+  <HasFossilsFoundDuring rdf:resource="#LateCretaceous"/>
   <from_million_years_ago rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">68</from_million_years_ago>
   <until_million_years_ago rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">66</until_million_years_ago>
 </owl:NamedIndividual>
