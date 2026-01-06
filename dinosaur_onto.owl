@@ -10,12 +10,12 @@
 
 <owl:ObjectProperty rdf:about="#HasFossilsFoundDuring">
   <rdfs:domain rdf:resource="#Dinosauria"/>
-  <rdfs:range rdf:resource="#Period"/>
+  <rdfs:range rdf:resource="#Age"/>
   <owl:inverseOf rdf:resource="#ContainsFossilsFrom"/>
 </owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:about="#ContainsFossilsFrom">
-  <rdfs:domain rdf:resource="#Period"/>
+  <rdfs:domain rdf:resource="#Age"/>
   <rdfs:range rdf:resource="#Dinosauria"/>
   <owl:inverseOf rdf:resource="#HasFossilsFoundDuring"/>
 </owl:ObjectProperty>
@@ -992,8 +992,16 @@
   <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </owl:Class>
 
+<owl:Class rdf:about="#Phanerozoic">
+  <rdfs:subClassOf rdf:resource="#Eon"/>
+</owl:Class>
+
 <owl:Class rdf:about="#Era">
   <rdfs:subClassOf rdf:resource="#Eon"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Mesozoic">
+  <rdfs:subClassOf rdf:resource="#Era"/>
 </owl:Class>
 
 <owl:Class rdf:about="#Period">
@@ -1012,13 +1020,133 @@
   <rdfs:subClassOf rdf:resource="#Period"/>
 </owl:Class>
 
-<owl:NamedIndividual rdf:about="#LateCretaceous">
-  <rdf:type rdf:resource="#Cretaceous"/>
+<owl:Class rdf:about="#Age">
+  <rdfs:subClassOf rdf:resource="#Period"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Induan">
+  <rdfs:subClassOf rdf:resource="#Age"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Olenekian">
+  <rdfs:subClassOf rdf:resource="#Age"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Anisian">
+  <rdfs:subClassOf rdf:resource="#Age"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Ladinian">
+  <rdfs:subClassOf rdf:resource="#Age"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Carnian">
+  <rdfs:subClassOf rdf:resource="#Age"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Norian">
+  <rdfs:subClassOf rdf:resource="#Age"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Rhaetian">
+  <rdfs:subClassOf rdf:resource="#Age"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Hettangian">
+  <rdfs:subClassOf rdf:resource="#Age"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Sinemurian">
+  <rdfs:subClassOf rdf:resource="#Age"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Pliensbachian">
+  <rdfs:subClassOf rdf:resource="#Age"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Aalenian">
+  <rdfs:subClassOf rdf:resource="#Age"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Bajocian">
+  <rdfs:subClassOf rdf:resource="#Age"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Bathonian">
+  <rdfs:subClassOf rdf:resource="#Age"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Callovian">
+  <rdfs:subClassOf rdf:resource="#Age"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Oxfordian">
+  <rdfs:subClassOf rdf:resource="#Age"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Kimmeridgian">
+  <rdfs:subClassOf rdf:resource="#Age"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Tithonian">
+  <rdfs:subClassOf rdf:resource="#Age"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Berriasian">
+  <rdfs:subClassOf rdf:resource="#Age"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Valanginian">
+  <rdfs:subClassOf rdf:resource="#Age"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Hauterivian">
+  <rdfs:subClassOf rdf:resource="#Age"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Barremian">
+  <rdfs:subClassOf rdf:resource="#Age"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Aptian">
+  <rdfs:subClassOf rdf:resource="#Age"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Albian">
+  <rdfs:subClassOf rdf:resource="#Age"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Cenomanian">
+  <rdfs:subClassOf rdf:resource="#Age"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Turonian">
+  <rdfs:subClassOf rdf:resource="#Age"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Coniacian">
+  <rdfs:subClassOf rdf:resource="#Age"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Santonian">
+  <rdfs:subClassOf rdf:resource="#Age"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Campanian">
+  <rdfs:subClassOf rdf:resource="#Age"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Maastrichtian">
+  <rdfs:subClassOf rdf:resource="#Age"/>
+</owl:Class>
+
+<owl:NamedIndividual rdf:about="#LateMaastrichtian">
+  <rdf:type rdf:resource="#Maastrichtian"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Tyrannosaurus">
   <rdf:type rdf:resource="#Tyrannosaurinae"/>
-  <HasFossilsFoundDuring rdf:resource="#LateCretaceous"/>
+  <HasFossilsFoundDuring rdf:resource="#LateMaastrichtian"/>
   <from_million_years_ago rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">69</from_million_years_ago>
   <until_million_years_ago rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">66</until_million_years_ago>
 </owl:NamedIndividual>
@@ -1026,7 +1154,7 @@
 <owl:NamedIndividual rdf:about="#Triceratops">
   <rdf:type rdf:resource="#Triceratopsini"/>
   <HasNaturalPredator rdf:resource="#Tyrannosaurus"/>
-  <HasFossilsFoundDuring rdf:resource="#LateCretaceous"/>
+  <HasFossilsFoundDuring rdf:resource="#LateMaastrichtian"/>
   <from_million_years_ago rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">68</from_million_years_ago>
   <until_million_years_ago rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">66</until_million_years_ago>
 </owl:NamedIndividual>
