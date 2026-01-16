@@ -10,12 +10,12 @@
 
 <owl:ObjectProperty rdf:about="#HasFossilsFoundDuring">
   <rdfs:domain rdf:resource="#Dinosauria"/>
-  <rdfs:range rdf:resource="#Age"/>
+  <rdfs:range rdf:resource="#Period"/>
   <owl:inverseOf rdf:resource="#ContainsFossilsFrom"/>
 </owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:about="#ContainsFossilsFrom">
-  <rdfs:domain rdf:resource="#Age"/>
+  <rdfs:domain rdf:resource="#Period"/>
   <rdfs:range rdf:resource="#Dinosauria"/>
   <owl:inverseOf rdf:resource="#HasFossilsFoundDuring"/>
 </owl:ObjectProperty>
