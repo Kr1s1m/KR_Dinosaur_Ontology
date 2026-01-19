@@ -1616,6 +1616,7 @@
       <owl:someValuesFrom rdf:resource="#Triceratops"/>
     </owl:Restriction>
   </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#Carnivore"/>
 </owl:Class>
 
 <owl:Class rdf:about="#Tarbosaurus">
