@@ -8,14 +8,14 @@
 
 <owl:Ontology rdf:about="http://dinosauria.org/dinosaur_onto.owl"/>
 
-<owl:ObjectProperty rdf:about="#HasCitation">
-  <rdfs:domain rdf:resource="#Hypothesis"/>
-  <rdfs:range rdf:resource="#Publication"/>
-</owl:ObjectProperty>
-
 <owl:ObjectProperty rdf:about="#SupportedBy">
   <rdfs:domain rdf:resource="#Hypothesis"/>
   <rdfs:range rdf:resource="#Evidence"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#HasCitation">
+  <rdfs:domain rdf:resource="#AssertiveEntity"/>
+  <rdfs:range rdf:resource="#Publication"/>
 </owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:about="#HasConfidenceLevel">
@@ -106,11 +106,6 @@
 <owl:ObjectProperty rdf:about="#InferredFromTaxon">
   <rdfs:domain rdf:resource="#Evidence"/>
   <rdfs:range rdf:resource="#TaxonConcept"/>
-</owl:ObjectProperty>
-
-<owl:ObjectProperty rdf:about="#CitedIn">
-  <rdfs:domain rdf:resource="#Evidence"/>
-  <rdfs:range rdf:resource="#Publication"/>
 </owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:about="#InvolvesPredator">
@@ -2769,14 +2764,14 @@
 <owl:NamedIndividual rdf:about="#HatcherPyriteDisease">
   <rdf:type rdf:resource="#PathologyEvidence"/>
   <HasConfidenceLevel rdf:resource="#HighConfidence"/>
-  <CitedIn rdf:resource="#Smithsonian_HatcherHistory_2018"/>
+  <HasCitation rdf:resource="#Smithsonian_HatcherHistory_2018"/>
   <evidence_notes rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Evidence of pyrite disease causing internal bone breakage.</evidence_notes>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#BlackBeautyCranialPathology">
   <rdf:type rdf:resource="#PathologyEvidence"/>
   <HasConfidenceLevel rdf:resource="#HighConfidence"/>
-  <CitedIn rdf:resource="#Horner2009"/>
+  <HasCitation rdf:resource="#Horner2009"/>
   <evidence_notes rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cranial bone lesions interpreted as evidence of parasitic infection.</evidence_notes>
 </owl:NamedIndividual>
 
