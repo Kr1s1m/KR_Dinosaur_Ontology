@@ -71,6 +71,11 @@
   <owl:inverseOf rdf:resource="#ObservedOn"/>
 </owl:ObjectProperty>
 
+<owl:ObjectProperty rdf:about="#hasPreservedElement">
+  <rdfs:domain rdf:resource="#Specimen"/>
+  <rdfs:range rdf:resource="#AnatomicalElement"/>
+</owl:ObjectProperty>
+
 <owl:ObjectProperty rdf:about="#HasNaturalPredator">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
@@ -180,6 +185,22 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
   <rdfs:domain rdf:resource="#Specimen"/>
   <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#estimated_mass">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Specimen"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#growthStage">
+  <rdfs:domain rdf:resource="#Specimen"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#preservedPortion">
+  <rdfs:domain rdf:resource="#Specimen"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
 </owl:DatatypeProperty>
 
 <owl:DatatypeProperty rdf:about="#interpretation_confidence">
@@ -559,6 +580,7 @@
 
 <owl:Class rdf:about="#Hadrosauriformes">
   <rdfs:subClassOf rdf:resource="#Styracosterna"/>
+  <rdfs:subClassOf rdf:resource="#LargeBodiedHerbivorousLineage"/>
 </owl:Class>
 
 <owl:Class rdf:about="#Iguanodontidae">
@@ -719,6 +741,7 @@
 
 <owl:Class rdf:about="#Ceratopsidae">
   <rdfs:subClassOf rdf:resource="#Coronosauria"/>
+  <rdfs:subClassOf rdf:resource="#LargeBodiedHerbivorousLineage"/>
 </owl:Class>
 
 <owl:Class rdf:about="#Chasmosaurinae">
@@ -967,6 +990,7 @@
 
 <owl:Class rdf:about="#Sauropodiformes">
   <rdfs:subClassOf rdf:resource="#Massapoda_Massospondylidae_Sauropodiformes"/>
+  <rdfs:subClassOf rdf:resource="#LargeBodiedHerbivorousLineage"/>
 </owl:Class>
 
 <owl:Class rdf:about="#Sauropoda">
@@ -1772,6 +1796,7 @@
     </owl:Class>
   </rdfs:subClassOf>
   <rdfs:subClassOf rdf:resource="#ApexPredator"/>
+  <rdfs:subClassOf rdf:resource="#TheropodCarnivore"/>
 </owl:Class>
 
 <owl:Class rdf:about="#Tarbosaurus">
@@ -2574,6 +2599,18 @@
   <rdfs:subClassOf rdf:resource="#Person"/>
 </owl:Class>
 
+<owl:Class rdf:about="#AnatomicalElement">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Femur">
+  <rdfs:subClassOf rdf:resource="#AnatomicalElement"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Skull">
+  <rdfs:subClassOf rdf:resource="#AnatomicalElement"/>
+</owl:Class>
+
 <owl:Class rdf:about="#TaxonConcept">
   <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </owl:Class>
@@ -2638,6 +2675,175 @@
     </owl:Class>
   </owl:equivalentClass>
   <rdfs:subClassOf rdf:resource="#Carnivore"/>
+</owl:Class>
+
+<owl:Class rdf:about="#TheropodCarnivore">
+  <rdfs:subClassOf rdf:resource="#Animalia"/>
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="#Theropoda"/>
+        <rdf:Description rdf:about="#Carnivore"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="#Theropoda"/>
+  <rdfs:subClassOf rdf:resource="#Carnivore"/>
+</owl:Class>
+
+<owl:Class rdf:about="#LargeBodiedHerbivorousLineage">
+  <rdfs:subClassOf rdf:resource="#Animalia"/>
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="#Hadrosauriformes"/>
+        <rdf:Description rdf:about="#Ceratopsidae"/>
+        <rdf:Description rdf:about="#Sauropodiformes"/>
+      </owl:unionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="#Dinosauria"/>
+</owl:Class>
+
+<owl:Class rdf:about="#AdultSpecimen">
+  <rdfs:subClassOf rdf:resource="#Specimen"/>
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="#Specimen"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#growthStage"/>
+          <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adult</owl:hasValue>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+</owl:Class>
+
+<owl:Class rdf:about="#MaastrichtianSpecimen">
+  <rdfs:subClassOf rdf:resource="#Specimen"/>
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="#Specimen"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#DatedTo"/>
+          <owl:someValuesFrom rdf:resource="#Maastrichtian"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+</owl:Class>
+
+<owl:Class rdf:about="#PathologicalSpecimen">
+  <rdfs:subClassOf rdf:resource="#Specimen"/>
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="#Specimen"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#HasEvidence"/>
+          <owl:someValuesFrom rdf:resource="#PathologyEvidence"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+</owl:Class>
+
+<owl:Class rdf:about="#PathologicalTyrannosaurusSpecimen">
+  <rdfs:subClassOf rdf:resource="#Specimen"/>
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="#PathologicalSpecimen"/>
+        <rdf:Description rdf:about="#Tyrannosaurus"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="#PathologicalSpecimen"/>
+  <rdfs:subClassOf rdf:resource="#Tyrannosaurus"/>
+</owl:Class>
+
+<owl:Class rdf:about="#PathologicalCeratopsianSpecimen">
+  <rdfs:subClassOf rdf:resource="#Specimen"/>
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="#PathologicalSpecimen"/>
+        <rdf:Description rdf:about="#Ceratopsidae"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="#Ceratopsidae"/>
+  <rdfs:subClassOf rdf:resource="#PathologicalSpecimen"/>
+</owl:Class>
+
+<owl:Class rdf:about="#EvidenceBasedHypothesis">
+  <rdfs:subClassOf rdf:resource="#Hypothesis"/>
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="#Hypothesis"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#SupportedBy"/>
+          <owl:someValuesFrom rdf:resource="#Evidence"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+</owl:Class>
+
+<owl:Class rdf:about="#PathologySupportedHypothesis">
+  <rdfs:subClassOf rdf:resource="#Hypothesis"/>
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="#Hypothesis"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#SupportedBy"/>
+          <owl:someValuesFrom rdf:resource="#PathologyEvidence"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="#EvidenceBasedHypothesis"/>
+</owl:Class>
+
+<owl:Class rdf:about="#MaastrichtianTyrannosaurPathologyPredationHypothesis">
+  <rdfs:subClassOf rdf:resource="#PredationHypothesis"/>
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="#PredationHypothesis"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#SupportedBy"/>
+          <owl:someValuesFrom>
+            <owl:Class>
+              <owl:intersectionOf rdf:parseType="Collection">
+                <rdf:Description rdf:about="#PathologyEvidence"/>
+                <owl:Restriction>
+                  <owl:onProperty rdf:resource="#ObservedOn"/>
+                  <owl:someValuesFrom>
+                    <owl:Class>
+                      <owl:intersectionOf rdf:parseType="Collection">
+                        <rdf:Description rdf:about="#Specimen"/>
+                        <rdf:Description rdf:about="#Tyrannosaurus"/>
+                        <owl:Restriction>
+                          <owl:onProperty rdf:resource="#DatedTo"/>
+                          <owl:someValuesFrom rdf:resource="#Maastrichtian"/>
+                        </owl:Restriction>
+                      </owl:intersectionOf>
+                    </owl:Class>
+                  </owl:someValuesFrom>
+                </owl:Restriction>
+              </owl:intersectionOf>
+            </owl:Class>
+          </owl:someValuesFrom>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="#PathologySupportedHypothesis"/>
 </owl:Class>
 
 <owl:NamedIndividual rdf:about="#HighConfidence">
@@ -2720,12 +2926,16 @@
   <DescribedIn rdf:resource="#Horner2009"/>
   <DatedTo rdf:resource="#LateMaastrichtian"/>
   <HasEvidence rdf:resource="#BlackBeautyCranialPathology"/>
+  <rdf:type rdf:resource="#MaastrichtianSpecimen"/>
+  <rdf:type rdf:resource="#AdultSpecimen"/>
+  <rdf:type rdf:resource="#PathologicalTyrannosaurusSpecimen"/>
   <number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RTMP 81.6.1</number>
   <from_million_years_ago rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">69</from_million_years_ago>
   <until_million_years_ago rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">66</until_million_years_ago>
   <completeness rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.85</completeness>
   <year_collected rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1980</year_collected>
   <notes rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nickname refers to dark coloration caused by mineralization during fossilization.</notes>
+  <growthStage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adult</growthStage>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Hatcher">
@@ -2739,12 +2949,16 @@
   <DatedTo rdf:resource="#LateMaastrichtian"/>
   <HasEvidence rdf:resource="#HatcherBiteMarks"/>
   <HasEvidence rdf:resource="#HatcherPyriteDisease"/>
+  <rdf:type rdf:resource="#MaastrichtianSpecimen"/>
+  <rdf:type rdf:resource="#AdultSpecimen"/>
+  <rdf:type rdf:resource="#PathologicalCeratopsianSpecimen"/>
   <number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USNM ####</number>
   <from_million_years_ago rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">68</from_million_years_ago>
   <until_million_years_ago rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">66</until_million_years_ago>
   <completeness rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</completeness>
   <year_collected rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1888</year_collected>
   <notes rdf:datatype="http://www.w3.org/2001/XMLSchema#string">First Triceratops specimen put on exhibit in 1905, pieced together from multiple individuals. Pyrite disease later caused internal degradation of bones.</notes>
+  <growthStage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adult</growthStage>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#TyrannosaurusConcept">
@@ -2782,6 +2996,7 @@
   <SupportedBy rdf:resource="#HatcherBiteMarks"/>
   <HasConfidenceLevel rdf:resource="#MediumConfidence"/>
   <HasCitation rdf:resource="#Smith2012"/>
+  <rdf:type rdf:resource="#EvidenceBasedHypothesis"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Horner2009">
