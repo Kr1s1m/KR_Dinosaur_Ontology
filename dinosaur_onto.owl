@@ -2784,6 +2784,14 @@
   <HasCitation rdf:resource="#Smith2012"/>
 </owl:NamedIndividual>
 
+<owl:NamedIndividual rdf:about="#Horner2009">
+  <rdf:type rdf:resource="#Publication"/>
+  <publication_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2009</publication_year>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Horner</hasAuthor>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salisbury</hasAuthor>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wolff</hasAuthor>
+</owl:NamedIndividual>
+
 <owl:NamedIndividual rdf:about="#Smith2012">
   <rdf:type rdf:resource="#Publication"/>
   <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Smith</hasAuthor>
@@ -2791,14 +2799,6 @@
 
 <owl:NamedIndividual rdf:about="#Smithsonian_HatcherHistory_2018">
   <rdf:type rdf:resource="#Publication"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Horner2009">
-  <rdf:type rdf:resource="#Publication"/>
-  <publication_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2009</publication_year>
-  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Horner</hasAuthor>
-  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salisbury</hasAuthor>
-  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wolff</hasAuthor>
 </owl:NamedIndividual>
 
 
