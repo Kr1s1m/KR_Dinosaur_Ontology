@@ -1795,8 +1795,8 @@
       </owl:complementOf>
     </owl:Class>
   </rdfs:subClassOf>
-  <rdfs:subClassOf rdf:resource="#ApexPredator"/>
   <rdfs:subClassOf rdf:resource="#TheropodCarnivore"/>
+  <rdfs:subClassOf rdf:resource="#ApexPredator"/>
 </owl:Class>
 
 <owl:Class rdf:about="#Tarbosaurus">
@@ -2774,8 +2774,8 @@
       </owl:intersectionOf>
     </owl:Class>
   </owl:equivalentClass>
-  <rdfs:subClassOf rdf:resource="#Ceratopsidae"/>
   <rdfs:subClassOf rdf:resource="#PathologicalSpecimen"/>
+  <rdfs:subClassOf rdf:resource="#Ceratopsidae"/>
 </owl:Class>
 
 <owl:Class rdf:about="#EvidenceBasedHypothesis">
@@ -2809,7 +2809,7 @@
   <rdfs:subClassOf rdf:resource="#EvidenceBasedHypothesis"/>
 </owl:Class>
 
-<owl:Class rdf:about="#MaastrichtianTyrannosaurPathologyPredationHypothesis">
+<owl:Class rdf:about="#MaastrichtianPathologicalCeratopsianBiteMarkBasedPredationHypothesis">
   <rdfs:subClassOf rdf:resource="#PredationHypothesis"/>
   <owl:equivalentClass>
     <owl:Class>
@@ -2820,18 +2820,14 @@
           <owl:someValuesFrom>
             <owl:Class>
               <owl:intersectionOf rdf:parseType="Collection">
-                <rdf:Description rdf:about="#PathologyEvidence"/>
+                <rdf:Description rdf:about="#BiteMarkEvidence"/>
                 <owl:Restriction>
                   <owl:onProperty rdf:resource="#ObservedOn"/>
                   <owl:someValuesFrom>
                     <owl:Class>
                       <owl:intersectionOf rdf:parseType="Collection">
-                        <rdf:Description rdf:about="#Specimen"/>
-                        <rdf:Description rdf:about="#Tyrannosaurus"/>
-                        <owl:Restriction>
-                          <owl:onProperty rdf:resource="#DatedTo"/>
-                          <owl:someValuesFrom rdf:resource="#Maastrichtian"/>
-                        </owl:Restriction>
+                        <rdf:Description rdf:about="#MaastrichtianSpecimen"/>
+                        <rdf:Description rdf:about="#PathologicalCeratopsianSpecimen"/>
                       </owl:intersectionOf>
                     </owl:Class>
                   </owl:someValuesFrom>
@@ -2843,7 +2839,7 @@
       </owl:intersectionOf>
     </owl:Class>
   </owl:equivalentClass>
-  <rdfs:subClassOf rdf:resource="#PathologySupportedHypothesis"/>
+  <rdfs:subClassOf rdf:resource="#EvidenceBasedHypothesis"/>
 </owl:Class>
 
 <owl:NamedIndividual rdf:about="#HighConfidence">
@@ -2996,7 +2992,7 @@
   <SupportedBy rdf:resource="#HatcherBiteMarks"/>
   <HasConfidenceLevel rdf:resource="#MediumConfidence"/>
   <HasCitation rdf:resource="#Smith2012"/>
-  <rdf:type rdf:resource="#EvidenceBasedHypothesis"/>
+  <rdf:type rdf:resource="#MaastrichtianPathologicalCeratopsianBiteMarkBasedPredationHypothesis"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Horner2009">
