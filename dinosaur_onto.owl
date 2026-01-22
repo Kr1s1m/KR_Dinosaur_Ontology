@@ -1795,8 +1795,8 @@
       </owl:complementOf>
     </owl:Class>
   </rdfs:subClassOf>
-  <rdfs:subClassOf rdf:resource="#TheropodCarnivore"/>
   <rdfs:subClassOf rdf:resource="#ApexPredator"/>
+  <rdfs:subClassOf rdf:resource="#TheropodCarnivore"/>
 </owl:Class>
 
 <owl:Class rdf:about="#Tarbosaurus">
@@ -2687,8 +2687,8 @@
       </owl:intersectionOf>
     </owl:Class>
   </owl:equivalentClass>
-  <rdfs:subClassOf rdf:resource="#Theropoda"/>
   <rdfs:subClassOf rdf:resource="#Carnivore"/>
+  <rdfs:subClassOf rdf:resource="#Theropoda"/>
 </owl:Class>
 
 <owl:Class rdf:about="#LargeBodiedHerbivorousLineage">
@@ -3005,6 +3005,7 @@
 
 <owl:NamedIndividual rdf:about="#Smith2012">
   <rdf:type rdf:resource="#Publication"/>
+  <publication_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2012</publication_year>
   <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Smith</hasAuthor>
 </owl:NamedIndividual>
 
