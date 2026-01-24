@@ -71,7 +71,7 @@
   <owl:inverseOf rdf:resource="#ObservedOn"/>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#hasPreservedElement">
+<owl:ObjectProperty rdf:about="#HasPreservedElement">
   <rdfs:domain rdf:resource="#Specimen"/>
   <rdfs:range rdf:resource="#AnatomicalElement"/>
 </owl:ObjectProperty>
@@ -1795,8 +1795,8 @@
       </owl:complementOf>
     </owl:Class>
   </rdfs:subClassOf>
-  <rdfs:subClassOf rdf:resource="#ApexPredator"/>
   <rdfs:subClassOf rdf:resource="#TheropodCarnivore"/>
+  <rdfs:subClassOf rdf:resource="#ApexPredator"/>
 </owl:Class>
 
 <owl:Class rdf:about="#Tarbosaurus">
@@ -2687,8 +2687,8 @@
       </owl:intersectionOf>
     </owl:Class>
   </owl:equivalentClass>
-  <rdfs:subClassOf rdf:resource="#Carnivore"/>
   <rdfs:subClassOf rdf:resource="#Theropoda"/>
+  <rdfs:subClassOf rdf:resource="#Carnivore"/>
 </owl:Class>
 
 <owl:Class rdf:about="#LargeBodiedHerbivorousLineage">
